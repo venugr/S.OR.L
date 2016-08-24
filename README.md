@@ -12,7 +12,7 @@ Objective:
 This is to design and develop S.OR.L (now on SORL) using Java/Groovy or Go-lang as a solution to drive the ORchecstration and automate any-to-any. Tools which are similar are Chef, Ansible and other automation tools.
 
 The only, the mostly, advantage is you don't have to learn any new language, Markup or databases/sql. This is all about Digitization of an Engineer working at a computer. Thought SORL ends with Language, but this is something you have already using in your day-in-day-out, i.e, all OS commands.
-
+<p>
 Example:
 
   .Wait #
@@ -47,3 +47,4 @@ Example:
   }
   #
   
+</p>
