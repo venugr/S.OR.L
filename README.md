@@ -13,38 +13,39 @@ This is to design and develop S.OR.L (now on SORL) using Java/Groovy or Go-lang 
 
 The only, the mostly, advantage is you don't have to learn any new language, Markup or databases/sql. This is all about Digitization of an Engineer working at a computer. Thought SORL ends with Language, but this is something you have already using in your day-in-day-out, i.e, all OS commands.
 <p>
-Example:
+Example:<br><br>
 
-  .Wait #
-  sudo yum install httpd -y
-  service httpd start
-  #
-  .Wait $
-  su - user
-  #
-  (.Wait $) {
-      sudo yum install httpd -y
-      service httpd start
-  }
-  # 
-  (.Wait SQL>) {
-      sftp -o IdentityFile=your.pem user@ipaddress
-      cd /tmp
-      put your.zip
-      exit(.Wait $)
-  }
-  #
-  .Include your.sorl
-  #
-  .task1
-  #
-  .If <Condition> {
-     (.Wait $) {
-        scp file google.drive.com:/dirve/image
-        echo $?
-        ls -ltr
-     }
-  }
-  #
-  
-</p>
+  .Wait #<br>
+  sudo yum install httpd -y<br>
+  service httpd start<br>
+  #<br>
+  .Wait $<br>
+  su - user<br>
+  #<br>
+  (.Wait $) {<br>
+      sudo yum install httpd -y<br>
+      service httpd start<br>
+  }<br>
+  # <br>
+  (.Wait SQL>) {<br>
+      sftp -o IdentityFile=your.pem user@ipaddress<br>
+      cd /tmp<br>
+      put your.zip<br>
+      exit(.Wait $)<br>
+  }<br>
+  #<br>
+  .Include your.sorl<br>
+  #<br>
+  .task1<br>
+  #<br>
+  .If <Condition> {<br>
+     (.Wait $) {<br>
+        scp file google.drive.com:/dirve/image<br>
+        echo $?<br>
+        ls -ltr<br>
+     }<br>
+  }<br>
+  #<br>
+  <br>
+</p><br>
+<br>
