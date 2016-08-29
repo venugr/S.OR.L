@@ -19,7 +19,7 @@ public class SorInventory {
 
    private String defInventory = "sorl.inventory" ;
    private String inventory    = null ;
-   private ArrayList<String> invFileList = null ;
+   private ArrayList<String> inventoryFileInfo = null ;
 
    public SorInventory() {
       inventory = defInventory ;
@@ -34,7 +34,25 @@ public class SorInventory {
    public boolean load() {
 
       SorReturn sr = ReadTextFile ( inventory ) ;
+
+      if ( sr.getErrNum() == -1 ) { 
+         System.out.println ( "Error: " + sr.getErrMessage() ) ; 
+         return false ;
+      }
+
+      inventoryFileInfo = ( ArrayList<String> )sr.getReturnObject() ;
+
       return true ;
+
+   }
+
+   public String getLine ( int lineNum ) {
+
+      if ( inventoryFileInfo == null ) { return null ; } 
+      if ( inventoryFileInfo.size() <= 0 ) { return null ; }
+      if ( lineNum > inventoryFileInfo.size() ) { return null ; }
+
+      return inventoryFileInfo.get ( lineNum ) ;
 
    }
 
