@@ -1,0 +1,1 @@
+java -cp .:build/src:build/test:lib/junit.jar:lib/hamcrest.jar org.junit.runner.JUnitCore $*

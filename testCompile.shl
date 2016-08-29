@@ -1,2 +1,2 @@
 
-javac -cp ".:lib:build/src" -d ./build/test ./test/*.java
+javac -cp ".:lib/junit.jar:lib/hamcrest.jar:build/src" -d ./build/test ./test/*.java
