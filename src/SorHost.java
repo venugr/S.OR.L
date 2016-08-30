@@ -16,6 +16,8 @@ public class SorHost {
    private String hostIp   = "" ;
    private String hostUser = "" ;
 
+   private String hostSshPort = "22" ;
+
    private String hostUserPassword = "NA" ;
    private String hostSshKeyFile = "NA" ;
   
@@ -42,7 +44,8 @@ public class SorHost {
       this.hostGroup = hostGroup ;
    }
 
-   public void setPassword   ( String password   ) { hostUserPassword = password ; }
-   public void setSshKeyFile ( String sshkeyfile ) { hostSshKeyFile = sshkeyfile ; }
+   public void setPassword   ( String password   ) { hostUserPassword = password   ; }
+   public void setSshPort    ( String sshport    ) { hostSshPort      = sshport    ; }
+   public void setSshKeyFile ( String sshkeyfile ) { hostSshKeyFile   = sshkeyfile ; }
 
 }
