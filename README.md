@@ -27,7 +27,7 @@ Example:<br><br>
       service httpd start<br>
   }<br>
   # <br>
-  (.Wait SQL>) {<br>
+  (.Wait sftp>) {<br>
       sftp -o IdentityFile=your.pem user@ipaddress<br>
       cd /tmp<br>
       put your.zip<br>
