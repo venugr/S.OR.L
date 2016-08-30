@@ -4,7 +4,7 @@
 
 */
 
-package org.sor.inventory ;
+package org.sor.main ;
 
 import java.io.BufferedReader ;
 import java.io.FileReader ;
@@ -31,6 +31,12 @@ public class SorInventory {
 
    }
 
+   public void parseInventory() {
+
+
+   }
+
+
    public boolean load() {
 
       SorReturn sr = ReadTextFile ( inventory ) ;
@@ -41,6 +47,7 @@ public class SorInventory {
       }
 
       inventoryFileInfo = ( ArrayList<String> )sr.getReturnObject() ;
+      parseInventory() ;
 
       return true ;
 
