@@ -1,6 +1,5 @@
 /*
    SorReturn
-
 */
 
 package org.sor.utils ;

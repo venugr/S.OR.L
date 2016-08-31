@@ -9,7 +9,7 @@ package org.sorl.sor.utils ;
 //import org.apache.log4j.Level ;
 //import org.apache.log4j.Logger ;
 
-class SorLogger {
+public class SorLogger {
 
    public static StringBuilder cmdLog = new StringBuilder() ;
    public static StringBuilder blkLog = new StringBuilder() ;
