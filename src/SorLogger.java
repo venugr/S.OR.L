@@ -6,8 +6,8 @@
 
 package org.sorl.sor.utils ;
 
-import org.apache.log4j.Level ;
-import org.apache.log4j.Logger ;
+//import org.apache.log4j.Level ;
+//import org.apache.log4j.Logger ;
 
 class SorLogger {
 
@@ -16,7 +16,7 @@ class SorLogger {
    public static StringBuilder clrLog = new StringBuilder() ;
    public static StringBuilder glbLog = new StringBuilder() ;
 
-   public static void print( Level level , String message ) {
+   public static void print( String message ) {
 
       cmdLog.append( message ) ;
       blkLog.append( message ) ;
