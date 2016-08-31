@@ -17,6 +17,7 @@ Example:<br><br>
 
   .Wait #<br>
   sudo yum install httpd -y<br>
+  .CMD VAL output
   service httpd start<br>
   #<br>
   .Wait $<br>
@@ -26,6 +27,11 @@ Example:<br><br>
       sudo yum install httpd -y<br>
       service httpd start<br>
   }<br>
+  .VAL BLK OUTPUT
+  .PROCESS BLK
+  .CLEAR BLK
+  .VAL CLR 
+  .CLEAR
   # <br>
   (.Wait sftp>) {<br>
       sftp -o IdentityFile=your.pem user@ipaddress<br>
