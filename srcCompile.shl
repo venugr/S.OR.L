@@ -1,2 +1,3 @@
 
 javac -cp ".:lib:build/src" -d ./build/src ./src/*.java
+echo "Java Compile is done."
