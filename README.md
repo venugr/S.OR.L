@@ -55,3 +55,15 @@ Example:<br><br>
   <br>
 </p><br>
 <br>
+
+
+(.var) {
+    xyz, abc
+    name = asndkadklasdlkj
+}
+=====<br>
+var a,b,c<br>
+var xyz<br>
+=====<br>
+
+
